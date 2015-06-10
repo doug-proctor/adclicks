@@ -26,8 +26,13 @@
 
 		$('.option').click(function() {
 			var value = $(this).attr("id");
-			console.log(value);
-			ga('send', 'event', 'advert', 'click', 'test adverts', value);
+			ga('send', {
+				'hitType': 'event',          // Required.
+				'eventCategory': 'advert',   // Required.
+				'eventAction': 'click',      // Required.
+				'eventLabel': 'measurement click',
+				'eventValue': value
+			});
 		});
 
 	</script>
