@@ -1,2 +1,3 @@
-# adclicks
-A/B testing for creative
+## Adclicks
+
+Proof of concept internal A/B testing for agency creative.
